@@ -1,0 +1,470 @@
+/* Reset some default styles and apply a basic style to the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+section{
+    margin: 25px 0px;
+}
+
+/* Style the navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+}
+
+/* Style the company logo on the left */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: hsl(180deg 35.09% 22.35%);
+}
+
+/* Style the navigation links in the center */
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Style the icons on the right */
+.icons {
+    display: flex;
+    font-size: 20px;
+}
+
+.icons i {
+    padding: 10px;
+}
+
+/* ----------------------------Carousel Section ---------------------------- */ 
+
+.caraousel-section{
+}
+
+.caraousel-section-container {
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    position: relative;
+}
+
+.fur-content {
+    height: fit-content;
+    width:  30%;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    padding: 10px 30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(254, 254, 254, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 1;
+}
+.fur-content-head{
+    font-size: 3.5vw;
+    color: hsl(180deg 35.09% 22.35%);
+    font-family:'Times New Roman', Times, serif;
+    margin: 0px;
+    margin-top : 45px;
+}
+.fur-content-body{
+    font-size: 1.3vw;
+    color: rgb(66, 65, 65);
+}
+.fur-img-container{
+    display: flex;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    align-items: end;
+    justify-content: end;
+    height: 100%;
+    width: 95%;
+    position: relative;
+}
+.dot{
+    position: absolute;
+    font-size: x-large;
+    font-weight: 600;
+    color: hsl(180deg 35.09% 22.35%);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    left: 8%;
+    top:8%;
+}
+.dot p{
+    margin: 0;
+    line-height: 15px;
+}
+.fur-img {
+    max-height: 80vh;
+    min-height: 80vh;
+    width: 75%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin-right: 75px; */
+}
+.arrow{
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    padding: 0px 8px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(232, 232, 232, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    right: 3.2%;
+    bottom: -15px;
+}
+
+/* ----------------------------Partners Section ---------------------------- */ 
+.partners-section-container{
+    background-color: rgb(237, 237, 237);
+    padding: 30px 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.partners-section-container h2{
+    color: rgb(107, 107, 107);
+}
+
+.capmanies-name-conatiner{
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.companies-name{
+    font-size: 22px;
+    font-weight: 700;
+    color: grey;
+    padding: 10px;
+}
+
+/* ----------------------------Deals Section ---------------------------- */ 
+.deals-section-container{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.deal-box{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.deal-box h2{
+    color: hsl(180deg 35.09% 22.35%);
+    font-size: 3vw;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.deal-box h4{
+    margin: 15px 0 0 0;
+}
+.deal-box p{
+    color: rgb(66, 65, 65);
+    
+    overflow-wrap: break-word;
+}
+.deal-box i{
+    color: hsl(180deg 35.09% 22.35%);
+    font-size: 25px;
+}
+
+/* About Section - Home Page
+------------------------------*/
+.about {
+    --background-color: #f4f4f4;
+    margin-top: 100px;
+  }
+  
+  .about .content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 19px;
+    padding: 10px 0px;
+    color: hsl(180deg 35.09% 22.35%);
+    border-radius: 7px;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .about-us-head{
+    margin-bottom: 50px;
+  }
+  
+  .about .content h2 {
+    font-weight: 700;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  .about .icon-box {
+    transition: all 0.3s ease-out 0s;
+    margin-bottom: 100px;
+  }
+  /* .img-container .icon-box {
+    height: 250px;
+  } */
+  
+  .about .icon-box h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(180deg 35.09% 22.35%);
+  }
+  .about .icon-box h2 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: hsl(180deg 35.09% 22.35%);
+  }
+  
+  .about .icon-box p {
+    margin-bottom: 0;
+  }
+  
+  
+  .about .icon-box:hover i {
+    background-color: var(--primary-color);
+    color: var(--contrast-color);
+  }
+  
+  .about .icon-boxes .img-container:nth-child(2) .icon-box  {
+    margin-top: -40px;
+  }
+  .about .icon-boxes .img-container:nth-child(3) .icon-box{
+    margin-top: -270px;
+  }
+  .about .icon-boxes .img-container:nth-child(4) .icon-box{
+margin-top: -150px;
+  }
+  .lm-btn-container{
+    margin-bottom: 90px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  .lm-btn{
+    /* margin: auto 75%; */
+    width: 150px;
+    background-color: rgb(186, 186, 186);
+    color: rgb(52, 52, 52);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .icon-box img{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+  }
+
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.section-header h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 19px;
+    padding: 10px 0px;
+    color: hsl(180deg 35.09% 22.35%);
+    border-radius: 7px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.portfolio .portfolio-flters {
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .portfolio .portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 10px;
+    line-height: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+  @media (max-width: 575px) {
+    .portfolio .portfolio-flters li {
+      font-size: 14px;
+      margin: 0 5px;
+    }
+  }
+  
+  .portfolio .portfolio-wrap {
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .portfolio .portfolio-wrap img {
+    transition: 0.3s;
+    position: relative;
+    z-index: 5;
+    height: 300px;
+    width: 50%;
+    margin-top: -150px;
+    left: 25%;
+    
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+    text-align: center;
+    padding: 25px 20px;
+    background-color: #e8e8e8;
+    position: relative;
+    border-top: 1px solid #f3f3f3;
+    z-index: 2;
+    height: 300px;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-right: 50px;
+    color: rgb(41, 31, 31);
+  }
+  
+  
+  .portfolio .portfolio-wrap .portfolio-info p {
+    color: #6c757d;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 25px 50px 0 0;
+  }
+  .portfolio .portfolio-wrap .portfolio-info p span {
+    text-decoration: line-through;
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  
+  .portfolio .portfolio-wrap:hover img {
+    /* transform: scale(1.1); */
+  }
+  
+ 
+
+
+
+/* Media query for responsive design */
+@media (min-width: 1930px) {
+    .fur-content-head{
+        font-size: 55px;
+    }
+    .fur-content-body{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width: 900px) {
+    
+    .capmanies-name-conatiner{
+        gap: 50px;
+    }
+    .deals-section-container{
+        display: grid;
+        gap: 25px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .deal-box h2{
+        font-size: xx-large;
+        
+    }
+   
+}
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        margin-top: 30px;
+    }
+
+    .nav-links a {
+        padding: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+    .deals-section-container{
+        margin: 0px 50px;
+    }
+    .fur-img {
+        max-height: 50vh;
+        min-height: 50vh;
+        /* width: 80%; */
+    }
+    .arrow{
+        right: 3.2%;
+    }
+    .dot{
+        display: none;
+    }
+    .about .icon-boxes .img-container:nth-child(2) .icon-box  {
+    margin-top: 0px;
+  }
+  .about .icon-boxes .img-container:nth-child(3) .icon-box{
+    margin-top: 0px;
+  }
+  .about .icon-boxes .img-container:nth-child(4) .icon-box{
+margin-top: 0px;
+  }
+    .lm-btn-container{
+        margin-bottom: 10px;
+      }
+      .about .icon-boxes .img-container:nth-child(2) .icon-box,
+      .about .icon-boxes .img-container:nth-child(4) .icon-box  {
+        margin-top: 0px;
+      }
+      .about .icon-boxes .img-container:nth-child(3) .icon-box{
+        margin-top: 0px;
+      }
+    /* .dot p{
+        width: 90px;
+        height: 25px;
+    } */
+}
