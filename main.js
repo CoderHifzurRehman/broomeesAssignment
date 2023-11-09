@@ -21,5 +21,5 @@ var currentImageIndex = 0;
 
             furImg.src = imageUrls[currentImageIndex];
             furImg.style.opacity = 1;
-        }, 300);
+        }, 1000);
         }
