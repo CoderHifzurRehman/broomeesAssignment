@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 section{
     margin: 25px 0px;
@@ -11,11 +11,12 @@ section{
 /* Style the navbar container */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: white;
     color: black;
     padding: 10px 20px;
+    margin: 25px 70px;
 }
 
 /* Style the company logo on the left */
@@ -29,11 +30,12 @@ section{
 .nav-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .nav-links a {
@@ -53,8 +55,6 @@ section{
 
 /* ----------------------------Carousel Section ---------------------------- */ 
 
-.caraousel-section{
-}
 
 .caraousel-section-container {
     /* justify-content: flex-end;
@@ -283,7 +283,7 @@ margin-top: -150px;
   .icon-box img{
     width: 100%;
     height: auto;
-    margin: 20px;
+    margin-top: 40px;
   }
 
 
@@ -374,10 +374,139 @@ margin-top: -150px;
   }
   
   .portfolio .portfolio-wrap:hover img {
-    /* transform: scale(1.1); */
+    transform: scale(1.1);
   }
   
- 
+ /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    --background-color: hsl(180deg 35.09% 22.35%);
+    color: #fff;
+    background-color: hsl(180deg 35.09% 22.35%);
+    font-size: 14px;
+    padding-bottom: 50px;
+    padding-top: 25px;
+  }
+  .upper-footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .upper-footer h2{
+    font-size: 45px;
+    margin-right: 150px;
+    margin-bottom: 25px;
+  }
+  .contact-sale-btn{
+    width: 125pxpx;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: larger;
+    font-weight: 500;
+    background-color: hsla(180, 1%, 73%, 0.185);
+    color: #fff;
+  }
+  .contact-sale-btn:hover{
+    background-color: #fff;
+    color: rgb(37 77 77);
+  }
+  .get-started-btn{
+    width: 125px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 25px;
+    border: none;
+    font-size: larger;
+    font-weight: 500;
+    color: rgb(37 77 77);
+  }
+  .get-started-btn:hover{
+    color: #fff;
+    background-color: rgba(184, 189, 189, 0.215);
+  }
+  .main-footer{
+    border-top: 1px solid grey;
+    padding-top: 50px;
+  }
+  .footer .footer-top {
+    padding-top: 50px;
+  }
+  
+  .footer .footer-about .logo {
+    line-height: 0;
+    margin-bottom: 25px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-about{
+    margin-right: 100px;
+  }
+  
+  
+  
+  .footer .footer-about p {
+    font-size: 14px;
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .footer .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-links ul i {
+    padding-right: 2px;
+    font-size: 12px;
+    line-height: 0;
+  }
+  
+  .footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer .footer-links ul a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer .footer-links ul a:hover {
+    color: #b8b7b7;
+  }
+  
+  .footer .footer-contact p {
+    margin-bottom: 5px;
+  }
+  
+  .footer .upper-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+
+
+
 
 
 
@@ -413,11 +542,14 @@ margin-top: -150px;
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        margin: 0;
     }
 
     .nav-links {
         margin-top: 30px;
+        /* display: contents; */
     }
+    
 
     .nav-links a {
         padding: 10px;
@@ -463,8 +595,14 @@ margin-top: 0px;
       .about .icon-boxes .img-container:nth-child(3) .icon-box{
         margin-top: 0px;
       }
-    /* .dot p{
-        width: 90px;
-        height: 25px;
-    } */
+      .get-started-btn{
+        margin-right: 0px;
+      }
+      /* .upper-footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+      } */
 }
