@@ -11,7 +11,7 @@ var currentImageIndex = 0;
     
         function changeImage(direction) {
             var furImg = document.querySelector('.fur-img');
-            furImg.style.opacity = 0;
+            furImg.style.opacity = 0.3;
             setTimeout(function () {
             if (direction === 'next') {
                 currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
