@@ -521,17 +521,19 @@ margin-top: -150px;
   }
   .upper-footer h2{
     font-size: 45px;
-    margin-right: 150px;
-    margin-bottom: 25px;
+    /* margin-right: 150px;
+    margin-bottom: 25px; */
   }
+  
   .contact-sale-btn{
-    width: 125pxpx;
+    width: 125px;
     height: 50px;
     border-radius: 25px;
     border: none;
     font-size: larger;
     font-weight: 500;
     background-color: hsla(180, 1%, 73%, 0.185);
+    margin: 25px;
     color: #fff;
   }
   .contact-sale-btn:hover{
@@ -732,6 +734,15 @@ margin-top: 0px;
       }
       .client .section-header h2:first-child{
         margin: 50px 0 0 0;
+      }
+      .upper-footer h2{
+        font-size: 25px;
+      }
+      .footer .footer-top{
+        padding-top: 5px;
+      }
+      .main-footer{
+        padding-top: 10px;
       }
       /* .upper-footer{
         display: flex;
